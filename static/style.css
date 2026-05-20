@@ -1,0 +1,104 @@
+body {
+
+    background: black;
+    color: darkred;
+    text-align: center;
+
+    font-family: 'Nosifer', sans-serif;
+}
+
+.title {
+
+    color: darkred;
+
+    font-size: 90px;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 1px red,
+        0 0 20px darkred,
+        0 0 50px red;
+
+    letter-spacing: 10px;
+
+    margin-top: -100px;
+}
+
+.title-block {
+
+    margin-top: 40px;
+}
+
+h1 {
+
+    color: darkred;
+
+    font-size: 90px;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 10px darkred;
+
+    letter-spacing: 10px;
+
+    font-family: 'Nosifer', sans-serif;
+
+    margin-bottom: 0px;
+
+    opacity: 0.7;
+}
+
+h2 {
+
+    color: red;
+
+    font-size: 60px;
+
+    text-align: center;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 5px red,
+        0 0 15px darkred;
+
+    font-family: 'Nosifer', sans-serif;
+
+    margin-top: -20px;
+    opacity: 0.4;
+}
+
+h2 {
+
+    font-size: 60px;
+}
+
+h1 {
+
+    font-size: 100px;
+}
+
+button {
+
+    background: darkred;
+
+    color: white;
+
+    border: none;
+
+    padding: 20px;
+
+    font-size: 25px;
+
+    border-radius: 10px;
+
+    font-family: 'Nosifer', sans-serif;
+}
+
+button:hover {
+
+    background: red;
+}

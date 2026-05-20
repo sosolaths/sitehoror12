@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Horror Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<head>
+    <title>My Horror Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<body>
+<div class="title-block">
+    <h1>MY HORROR GAME</h1>
+    <h2>Ckopo reliz</h2>
+<!-- ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ВЫРАВНИВАНИЯ В РЯД -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 30px; padding: 0 20px;">
+            <!-- ЛЕВАЯ КАРТИНКА -->
+            <img src="{{ url_for('static', filename='ded.jpg') }}" alt="Horror Tree" style="width: 300px; border: 2px solid darkred; box-shadow: 0 0 100px rgba(139, 0, 0, 0.7); filter: grayscale(30%);">
+            <!-- ВИДЕО ПО ЦЕНТРУ (ЗАЩИЩЕНО ОТ ВСПЛЫВАЮЩИХ КНОПОК БРАУЗЕРА) -->
+            <video id="horrorVideo" width="650" loop disablePictureInPicture controlsList="nodownload" style="border: 2px solid darkred; box-shadow: 0 0 25px darkred;">
+                <source src="{{ url_for('static', filename='oslaeb.mp4') }}" type="video/mp4">
+                Ваш browser не поддерживает видео.
+            </video>
+            <!-- ПРАВАЯ КАРТИНКА -->
+            <img src="{{ url_for('static', filename='ded.jpg') }}" alt="Horror Tree" style="width: 300px; border: 2px solid darkred; box-shadow: 0 0 100px rgba(139, 0, 0, 0.7); filter: grayscale(30%);">
+        </div>
+    </div>
+  <!-- БЛОК С КНОПКОЙ СКАЧАТЬ (Прямая ссылка с твоим ID Гугл Диска) -->
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+            <a href="https://drive.google.com/file/d/1opewtuOsERZ_e6POUWGZFjrDKVq8bKZa/view?usp=drive_link" style="
+                display: inline-block;
+                padding: 15px 40px;
+                font-family: 'Nosifer', sans-serif;
+                font-size: 24px;
+                color: #ffffff;
+                background-color: #8b0000;
+                text-decoration: none;
+                border: 3px solid #ff0000;
+                border-radius: 10px;
+                box-shadow: 0 0 20px #ff0000, inset 0 0 10px #000000;
+                cursor: pointer;
+                transition: 0.3s ease;
+            " onmouseover="this.style.backgroundColor='#ff0000'; this.style.boxShadow='0 0 40px #ff0000';" onmouseout="this.style.backgroundColor='#8b0000'; this.style.boxShadow='0 0 20px #ff0000';">
+                СКАЧАТЬ ИГРУ
+            </a>
+        </div>
+
+
+   <!-- БЛОК С ОПИСАНИЕМ И СЮЖЕТОМ (НОВЫЙ) -->
+<!-- ЖЕСТКИЙ КОНТЕЙНЕР ДЛЯ ВЫРАВНИВАНИЯ КУБОВ ПО БОКАМ ОТ СЮЖЕТА -->
+    <div style="display: flex !important; justify-content: center !important; align-items: stretch !important; gap: 40px !important; max-width: 1650px !important; margin: 0 auto 50px auto !important; padding: 0 40px !important; box-sizing: border-box !important;">
+
+        <!-- ЛЕВЫЙ КУБ: ВЫСОКИЕ НАСТРОЙКИ (Добавлено много текста) -->
+        <div style="width: 340px !important; min-width: 340px !important; padding: 25px !important; background: rgba(0, 0, 0, 0.85) !important; border: 3px solid #8b0000 !important; border-radius: 15px !important; box-shadow: 0 0 20px rgba(139, 0, 0, 0.6) !important; text-align: left !important; box-sizing: border-box !important;">
+            <h3 style="font-family: 'Nosifer', sans-serif !important; color: #8b0000 !important; font-size: 13px !important; margin-bottom: 25px !important; text-align: center !important; text-shadow: 0 0 5px #8b0000 !important;">ВЫСОКИЕ НАСТРОЙКИ</h3>
+            <ul style="color: #dddddd !important; font-family: sans-serif !important; font-size: 13px !important; line-height: 2.0 !important; list-style-type: square !important; padding-left: 20px !important; margin: 0 !important;">
+                <li><strong style="color: #8b0000;">ОС:</strong> Windows 10 / 11 (64-bit)</li>
+                <li><strong style="color: #8b0000;">ЦП:</strong> Intel Core i7 / AMD Ryzen 7</li>
+                <li><strong style="color: #8b0000;">ОЗУ:</strong> 16 GB RAM (Dual Channel)</li>
+                <li><strong style="color: #8b0000;">ГПУ:</strong> NVIDIA RTX 3060 / RX 6600</li>
+                <li><strong style="color: #8b0000;">DirectX:</strong> Версия 12 (с поддержкой DXR)</li>
+                <li><strong style="color: #8b0000;">Звук:</strong> DirectX Compatible Sound Card</li>
+                <li><strong style="color: #8b0000;">Диск:</strong> 10 GB свободного места</li>
+                <li><strong style="color: #8b0000;">Тип диска:</strong> Строго на высокоскоростной SSD</li>
+                <li><strong style="color: #8b0000;">Дополнительно:</strong> Для игры в 1080p / 60 FPS на ультра-настройках графики</li>
+            </ul>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto 60px auto; padding: 30px; background: rgba(0, 0, 0, 0.75); border: 2px solid #8b0000; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 0, 0.5); text-align: left;">
+
+            <!-- Описание -->
+            <h3 style="font-family: 'Nosifer', sans-serif; color: #ff0000; font-size: 22px; margin-bottom: 15px; text-shadow: 0 0 10px #ff0000;">ОБ ИГРЕ</h3>
+            <p style="color: #dddddd; font-family: sans-serif; font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
+                Добро пожаловать в мир истинного кошмара. Вас ждет атмосферный психологический хоррор от первого лица, где каждый неверный шаг может стать последним. Исследуйте мрачные локации, разгадывайте жуткие тайны и помните: темнота чувствует ваш страх, а то, что прячется в ней, уже начало охоту.
+            </p>
+
+            <!-- Сюжет -->
+            <h3 style="font-family: 'Nosifer', sans-serif; color: #ff0000; font-size: 22px; margin-bottom: 15px; text-shadow: 0 0 10px #ff0000;">СЮЖЕТ</h3>
+            <p style="color: #dddddd; font-family: sans-serif; font-size: 16px; line-height: 1.6;">
+                Вы просыпаетесь в неизвестном месте, не помня своего имени. Вокруг лишь звенящая тишина и заброшенные стены старого дома, скрывающего кровавые секреты прошлого. Пытаясь найти выход, вы понимаете, что заперты здесь не одни. Чтобы выжить и вернуть свои воспоминания, вам придется заглянуть в глаза собственным кошмарам.
+
+   </div>
+         <!-- ПРАВЫЙ КУБ: НИЗКИЕ НАСТРОЙКИ (Добавлено много текста) -->
+        <div style="width: 340px !important; min-width: 340px !important; padding: 25px !important; background: rgba(0, 0, 0, 0.85) !important; border: 3px solid #8b0000 !important; border-radius: 15px !important; box-shadow: 0 0 20px rgba(139, 0, 0, 0.6) !important; text-align: left !important; box-sizing: border-box !important;">
+            <h3 style="font-family: 'Nosifer', sans-serif !important; color: #8b0000 !important; font-size: 13px !important; margin-bottom: 25px !important; text-align: center !important; text-shadow: 0 0 5px #8b0000 !important;">НИЗКИЕ НАСТРОЙКИ</h3>
+            <ul style="color: #dddddd !important; font-family: sans-serif !important; font-size: 13px !important; line-height: 2.0 !important; list-style-type: square !important; padding-left: 20px !important; margin: 0 !important;">
+                <li><strong style="color: #8b0000;">ОС:</strong> Windows 10 (64-bit только)</li>
+                <li><strong style="color: #8b0000;">ЦП:</strong> Intel Core i3 / AMD Ryzen 3</li>
+                <li><strong style="color: #8b0000;">ОЗУ:</strong> 8 GB RAM минимум</li>
+                <li><strong style="color: #8b0000;">ГПУ:</strong> GTX 1050 Ti / AMD RX 570</li>
+                <li><strong style="color: #8b0000;">DirectX:</strong> Версия 11 минимальная</li>
+                <li><strong style="color: #8b0000;">Звук:</strong> Стандартная звуковая плата</li>
+                <li><strong style="color: #8b0000;">Диск:</strong> 10 GB свободного места</li>
+                <li><strong style="color: #8b0000;">Тип диска:</strong> Допускается обычный HDD</li>
+                <li><strong style="color: #8b0000;">Дополнительно:</strong> Для стабильной игры в 720p / 30 FPS на минимальных пресетах графики</li>
+            </ul>
+        </div>
+
+    </div>
+            <!-- ХОРРОР-НАДПИСЬ НАД УПРАВЛЕНИЕМ -->
+            <h3 style="text-align: center !important; font-family: 'Nosifer', sans-serif !important; color: #ff0000 !important; font-size: 20px !important; margin-top: -60px !important; margin-bottom: 20px !important; text-shadow: 0 0 15px #ff0000 !important;">УПРАВЛЕНИЕ</h3>
+            <!-- Управление (НОВЫЙ БЛОК) -->
+            <!-- БЛОК УПРАВЛЕНИЯ (ТЕПЕРЬ БЛИЖЕ К СЮЖЕТУ) -->
+
+            <div style="max-width: 750px !important; margin: -50px auto 60px auto !important; padding: 25px !important; background: rgba(0, 0, 0, 0.8)  !important; text-align: center !important; display: block !important;">
+
+            <div style="color: #dddddd; font-family: sans-serif; font-size: 16px; line-height: 2;">
+                <!-- Элемент управления -->
+                <div style="margin-bottom: 5px;">
+                    <span style="display: inline-block; min-width: 110px; text-align: center; background: #222; border: 1px solid #ff0000; border-radius: 4px; padding: 2px 8px; font-weight: bold; color: #ff0000; margin-right: 15px; box-shadow: 0 0 5px rgba(255,0,0,0.5);">W, A, S, D</span> — Передвижение персонажа
+                </div>
+                <!-- Элемент управления -->
+                <div style="margin-bottom: 5px;">
+                    <span style="display: inline-block; min-width: 110px; text-align: center; background: #222; border: 1px solid #ff0000; border-radius: 4px; padding: 2px 8px; font-weight: bold; color: #ff0000; margin-right: 15px; box-shadow: 0 0 5px rgba(255,0,0,0.5);">Мышь</span> — Оглядеться вокруг
+                </div>
+                <!-- Элемент управления -->
+                <div style="margin-bottom: 5px;">
+                    <span style="display: inline-block; min-width: 110px; text-align: center; background: #222; border: 1px solid #ff0000; border-radius: 4px; padding: 2px 8px; font-weight: bold; color: #ff0000; margin-right: 15px; box-shadow: 0 0 5px rgba(255,0,0,0.5);">Shift</span> — Бег (Спринт)
+                </div>
+                <!-- Элемент управления -->
+                <div style="margin-bottom: 5px;">
+                    <span style="display: inline-block; min-width: 110px; text-align: center; background: #222; border: 1px solid #ff0000; border-radius: 4px; padding: 2px 8px; font-weight: bold; color: #ff0000; margin-right: 15px; box-shadow: 0 0 5px rgba(255,0,0,0.5);">E</span> — Взаимодействие (Открыть дверь / Взять предмет)
+                </div>
+                <!-- Элемент управления -->
+                <div style="margin-bottom: 5px;">
+                    <span style="display: inline-block; min-width: 110px; text-align: center; background: #222; border: 1px solid #ff0000; border-radius: 4px; padding: 2px 8px; font-weight: bold; color: #ff0000; margin-right: 15px; box-shadow: 0 0 5px rgba(255,0,0,0.5);">F</span> — Включить / Выключить фонарик
+                </div>
+                <!-- Элемент управления -->
+                <div>
+                    <span style="display: inline-block; min-width: 110px; text-align: center; background: #222; border: 1px solid #ff0000; border-radius: 4px; padding: 2px 8px; font-weight: bold; color: #ff0000; margin-right: 15px; box-shadow: 0 0 5px rgba(255,0,0,0.5);">Esc</span> — Пауза / Выход в меню
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ИСПРАВЛЕННЫЙ СКРИПТ: включает видео тихо по первому клику на сайте -->
+    <script>
+        var video = document.getElementById("horrorVideo");
+        video.volume = 0.1; // 10% от максимальной громкости
+        // Включаем видео со звуком, как только пользователь кликнет в любое место сайта
+        document.addEventListener('click', function() {
+            video.play();
+        }, { once: true });
+    </script>
+</body>
+</html>
