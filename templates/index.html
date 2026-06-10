@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>My Horror Game</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Yandex Ads -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <head>
     <title>My Horror Game</title>
@@ -51,6 +54,50 @@
                 СКАЧАТЬ ИГРУ
             </a>
         </div>
+        <!-- 💀 РЕКЛАМА (хоррор стиль) -->
+        <div style="
+            max-width:800px;
+            margin:40px auto;
+            padding:15px;
+            background:rgba(0,0,0,0.85);
+            border:1px solid rgba(255,0,0,0.2);
+            color:#aaa;
+            font-family:monospace;
+            position:relative;
+            overflow:hidden;
+        ">
+
+            <div style="
+                position:absolute;
+                inset:0;
+                background:repeating-linear-gradient(
+                    0deg,
+                    rgba(255,255,255,0.02),
+                    rgba(255,255,255,0.02) 1px,
+                    transparent 2px,
+                    transparent 4px
+                );
+                pointer-events:none;
+                opacity:0.3;
+            "></div>
+
+            <div style="color:#ff4444; font-size:12px; margin-bottom:10px;">
+                // SIGNAL INTERFERENCE //
+            </div>
+
+            <div id="yandex_rtb_R-A-19417594-1"></div>
+
+            <script>
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    blockId: "R-A-19417594-1",
+                    renderTo: "yandex_rtb_R-A-19417594-1",
+                    darkTheme: true
+                });
+            });
+            </script>
+
+        </div>
 
 
    <!-- БЛОК С ОПИСАНИЕМ И СЮЖЕТОМ (НОВЫЙ) -->
@@ -86,6 +133,7 @@
                 Вы просыпаетесь в неизвестном месте, не помня своего имени. Вокруг лишь звенящая тишина и заброшенные стены старого дома, скрывающего кровавые секреты прошлого. Пытаясь найти выход, вы понимаете, что заперты здесь не одни. Чтобы выжить и вернуть свои воспоминания, вам придется заглянуть в глаза собственным кошмарам.
 
    </div>
+
          <!-- ПРАВЫЙ КУБ: НИЗКИЕ НАСТРОЙКИ (Добавлено много текста) -->
         <div style="width: 340px !important; min-width: 340px !important; padding: 25px !important; background: rgba(0, 0, 0, 0.85) !important; border: 3px solid #8b0000 !important; border-radius: 15px !important; box-shadow: 0 0 20px rgba(139, 0, 0, 0.6) !important; text-align: left !important; box-sizing: border-box !important;">
             <h3 style="font-family: 'Nosifer', sans-serif !important; color: #8b0000 !important; font-size: 13px !important; margin-bottom: 25px !important; text-align: center !important; text-shadow: 0 0 5px #8b0000 !important;">НИЗКИЕ НАСТРОЙКИ</h3>
