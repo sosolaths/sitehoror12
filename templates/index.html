@@ -21,7 +21,9 @@
 <body>
 <div class="title-block">
     <h1>MY HORROR GAME</h1>
-    
+
+
+
 <!-- ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ВЫРАВНИВАНИЯ В РЯД -->
         <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 30px; padding: 0 20px;">
             <!-- ЛЕВАЯ КАРТИНКА -->
@@ -35,6 +37,7 @@
             <img src="{{ url_for('static', filename='ded.jpg') }}" alt="Horror Tree" style="width: 300px; border: 2px solid darkred; box-shadow: 0 0 100px rgba(139, 0, 0, 0.7); filter: grayscale(30%);">
         </div>
     </div>
+
   <!-- БЛОК С КНОПКОЙ СКАЧАТЬ (Прямая ссылка с твоим ID Гугл Диска) -->
         <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
             <a href="https://drive.google.com/file/d/1opewtuOsERZ_e6POUWGZFjrDKVq8bKZa/view?usp=drive_link" style="
@@ -54,22 +57,7 @@
                 СКАЧАТЬ ИГРУ
             </a>
         </div>
-            <!-- РЕКЛАМА -->
-            <div style="min-height:250px; display:flex; align-items:center; justify-content:center;">
-                <div id="yandex_rtb_R-A-19417594-1"></div>
-            </div>
 
-            <script>
-            window.yaContextCb.push(() => {
-                Ya.Context.AdvManager.render({
-                    blockId: "R-A-19417594-1",
-                    renderTo: "yandex_rtb_R-A-19417594-1",
-                    darkTheme: true
-                });
-            });
-            </script>
-
-        </div>
 
 
    <!-- БЛОК С ОПИСАНИЕМ И СЮЖЕТОМ (НОВЫЙ) -->
@@ -106,6 +94,7 @@
 
    </div>
 
+
          <!-- ПРАВЫЙ КУБ: НИЗКИЕ НАСТРОЙКИ (Добавлено много текста) -->
         <div style="width: 340px !important; min-width: 340px !important; padding: 25px !important; background: rgba(0, 0, 0, 0.85) !important; border: 3px solid #8b0000 !important; border-radius: 15px !important; box-shadow: 0 0 20px rgba(139, 0, 0, 0.6) !important; text-align: left !important; box-sizing: border-box !important;">
             <h3 style="font-family: 'Nosifer', sans-serif !important; color: #8b0000 !important; font-size: 13px !important; margin-bottom: 25px !important; text-align: center !important; text-shadow: 0 0 5px #8b0000 !important;">НИЗКИЕ НАСТРОЙКИ</h3>
@@ -123,6 +112,23 @@
         </div>
 
     </div>
+                            <!-- РЕКЛАМА -->
+            <div style="min-height:250px; display:flex; align-items:center; justify-content:center;">
+                <div id="yandex_rtb_R-A-19417594-1"></div>
+            </div>
+
+            <script>
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    blockId: "R-A-19417594-1",
+                    renderTo: "yandex_rtb_R-A-19417594-1",
+                    darkTheme: true
+                });
+            });
+            </script>
+
+        </div>
+
             <!-- ХОРРОР-НАДПИСЬ НАД УПРАВЛЕНИЕМ -->
             <h3 style="text-align: center !important; font-family: 'Nosifer', sans-serif !important; color: #ff0000 !important; font-size: 20px !important; margin-top: -60px !important; margin-bottom: 20px !important; text-shadow: 0 0 15px #ff0000 !important;">УПРАВЛЕНИЕ</h3>
             <!-- Управление (НОВЫЙ БЛОК) -->
@@ -161,6 +167,7 @@
 
     </div>
 
+
     <!-- ИСПРАВЛЕННЫЙ СКРИПТ: включает видео тихо по первому клику на сайте -->
     <script>
         var video = document.getElementById("horrorVideo");
@@ -170,5 +177,7 @@
             video.play();
         }, { once: true });
     </script>
+</body>
+</html>
 </body>
 </html>
